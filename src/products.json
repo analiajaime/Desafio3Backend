@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "title": "product01",
+        "description": "Description01",
+        "price": 10,
+        "thumbnail": "image01.jpg",
+        "code": "CODE01",
+        "stock": 20
+    },
+    {
+        "id": 2,
+        "title": "Product02",
+        "description": "Description02",
+        "price": 20,
+        "thumbnail": "image02.jpg",
+        "code": "CODE02",
+        "stock": 20
+    },
+    {
+        "id": 3,
+        "title": "Product03",
+        "description": "Description03",
+        "price": 30,
+        "thumbnail": "image03.jpg",
+        "code": "CODE03",
+        "stock": 20
+    },
+    {
+        "id": 4,
+        "title": "Product04",
+        "description": "Description04",
+        "price": 40,
+        "thumbnail": "image04.jpg",
+        "code": "CODE04",
+        "stock": 20
+    },
+    {
+        "id": 5,
+        "title": "Product05",
+        "description": "Description05",
+        "price": 50,
+        "thumbnail": "image05.jpg",
+        "code": "CODE05",
+        "stock": 20
+    },
+    {
+        "id": 6,
+        "title": "Product06",
+        "description": "Description06",
+        "price": 60,
+        "thumbnail": "image06.jpg",
+        "code": "CODE6",
+        "stock": 20
+    },
+    {
+        "id": 7,
+        "title": "Product07",
+        "description": "Description07",
+        "price": 70,
+        "thumbnail": "image07.jpg",
+        "code": "CODE07",
+        "stock": 20
+    },
+    {
+        "id": 8,
+        "title": "Product08",
+        "description": "Description08",
+        "price": 80,
+        "thumbnail": "image08.jpg",
+        "code": "CODE08",
+        "stock": 20
+    },
+    {
+        "id": 9,
+        "title": "Product09",
+        "description": "Description09",
+        "price": 90,
+        "thumbnail": "image09.jpg",
+        "code": "CODE09",
+        "stock": 20
+    },
+    {
+        "id": 10,
+        "title": "Product10",
+        "description": "Description10",
+        "price": 100,
+        "thumbnail": "image10.jpg",
+        "code": "CODE10",
+        "stock": 20
+    }
+]
