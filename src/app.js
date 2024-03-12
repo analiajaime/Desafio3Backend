@@ -1,29 +1,35 @@
 const express = require('express');
-const ProductManager = require('./productManager');
-const app = express();
-const port = 3000;
+const ProductManager = require('./productManager.js'); // Asegúrate de que la ruta sea correcta
 
-const productManager = new ProductManager('./products.json');
+const app = express();
+const PORT = 8080;
+
+const manager = new ProductManager('./src/products.json');
 
 app.get('/products', async (req, res) => {
-    const { limit } = req.query;
-    let products = await productManager.getAll();
-    if (limit) {
-        products = products.slice(0, Number(limit));
+    try {
+        const limit = parseInt(req.query.limit);
+        const products = await manager.getProductsLimit(limit);
+        res.json(products);
+    } catch (error) {
+        res.status(500).json({ error: 'Internal Server Error' });
     }
-    res.json(products);
 });
 
 app.get('/products/:pid', async (req, res) => {
-    const { pid } = req.params;
-    const product = await productManager.getById(pid);
-    if (product) {
-        res.json(product);
-    } else {
-        res.status(404).send('Product not found');
+    try {
+        const productId = parseInt(req.params.pid);
+        const product = await manager.getProductById(productId);
+        if (product) {
+            res.json(product);
+        } else {
+            res.status(404).json({ error: 'Product not found' });
+        }
+    } catch (error) {
+        res.status(500).json({ error: 'Internal Server Error' });
     }
 });
 
-app.listen(port, () => {
-    console.log(`Server listening at http://localhost:${port}`);
+app.listen(PORT, () => {
+    console.log(`Server is running at http://localhost:${PORT}`);
 });
