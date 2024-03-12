@@ -6,7 +6,6 @@ class ProductManager {
   }
 
   async addProduct(newObject) {
-    // La lógica para añadir un producto permanece igual
   }
 
   async getProducts() {
@@ -56,11 +55,9 @@ class ProductManager {
   }
 
   async updateProduct(pid, updatedProduct) {
-    // La lógica para actualizar un producto permanece igual
   }
 
   async deleteProduct(pid) {
-    // La lógica para eliminar un producto permanece igual
   }
 
   async getProductsLimit(limit) {
